@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.container {
+    background-image:url('./nature.jpg');
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 950px;
+    height: 550px;
+    justify-content: center;
+   
+        }
+body{
+    background: #1e1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.box{
+    
+    display: flex;
+    text-indent: 30px;
+}
+form{
+    width: 90%;
+    border-radius: 5px;
+  
+}
+h1{
+    color: white;
+}
+button {
+    background: #4a90e2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <h3>Anywhere App</h3>
+            <h3>Home</h3>
+            <h3>Join</h3>
+        </div>
+    <h2>start for free</h2>
+    <h1>Create a new account</h1>
+    <p>Already a Member?<a href="">Login</a></p>
+    <form action="">
+        <label for="fname"></label>
+        <input type="text" size="20" placeholder="first name" maxlength="15" id="fname" name="fname" required>
+        <label for="lsname"></label>
+        <input type="text" size="20" placeholder="last name" maxlength="15" id="fname" name="fname" required><br><br>
+        <label for="email"></label>
+        <input type="email" placeholder="Email" id="email" required><br><br>
+        <label for="password"></label>
+        <input type="password" id="password" placeholder="Password" name="password"> <br><br>
+        <button type="change method">Change method</button>
+        <button type="create account">Create account</button>
+    </form>
+    </div>
+</body>
+</html>

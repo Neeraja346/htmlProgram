@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf5e6;
+    
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.container {
+    background-color: #f8d7c2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(72, 193, 238, 0.1);
+    text-align: left;
+    margin: 40px auto;
+}
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+textarea{
+    width: 100%;
+    height: 80px;
+}
+</style>
+<body>
+        <h1>Library Survey</h1>
+        <h2>Help us improve your local Library</h2>
+   
+    <div class="container">
+        <form action="">
+        <label for="fname">Name</label>
+        <input type="text" size="20" placeholder="enter your name" maxlength="15" 2 id="fname" name="fname" required><br><br>
+        <label for="email">EMAIL:</label>
+        <input type="email" placeholder="enter your email" id="email" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Age" name="age" min="18" max="100" required><br><br>
+        <label for="visit">How often do you visit the library?</label><br><br>
+        <select id="">
+            <option value="" disabled selected>Select</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="rarely">Rarely</option>
+        </select><br><br>
+        <label for="">When you visit are you usually able to find what you are looking for?</label><br>
+        <input type="radio" id="option1"  value="Always">
+        <label for="option1">Always</label><br>
+        <input type="radio" id="option2"  value="Sometimes">
+        <label for="option1">Sometimes</label><br>
+        <input type="radio" id="option3" value="Rarely">
+        <label for="option1">Rarely</label><br>
+        <input type="radio" id="option3"  value="Never">
+        <label for="option1">Never</label><br><br>
+
+        <label for="">Do you usually find the books and other materials that you are looking for in the library?</label><br>
+        <input type="radio" id="option1"  value="Always">
+        <label for="option1">Always</label><br>
+        <input type="radio" id="option2"  value="Sometimes">
+        <label for="option1">Sometimes</label><br>
+        <input type="radio" id="option3" value="Rarely">
+        <label for="option1">Rarely</label><br>
+        <input type="radio" id="option3"  value="Never">
+        <label for="option1">Never</label><br><br>
+
+        <label for="">Please check all of the reason you visit the Library:(check all that apply)</label><br>
+        <input type="checkbox" id="option1" value="to check out/return books">
+        <label for="option1">to check out/return books</label><br>
+        <input type="checkbox" id="option2"  value="to use the computers">
+        <label for="option1">to use the computer</label><br>
+        <input type="checkbox" id="option3"  value="to get a book recommendations">
+        <label for="option1">to get a book recommendations</label><br>
+        <input type="checkbox" id="option4"  value="to do research/find informations">
+        <label for="option1">to do research/find informations</label><br>
+        <input type="checkbox" id="option5"  value="to take a class">
+        <label for="option1">to take a class</label><br><br>
+
+        <label for="improvements">Anything you would like to see improve?</label><br><br>
+        <textarea id="improvements" name="improvements" placeholder="Enter your comment here..."></textarea><br><br>
+         <button type="submit">Submit</button>
+
+    </form>
+    </div>
+</body>
+</html>
