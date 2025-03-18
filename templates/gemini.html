@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Adding Roboto and Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/static/web.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Summarizer | Web Summarizer</title>
+
+    <link href="/static/favicon.png" rel="icon">
+    <meta content="Online Tool to summarize transcript of an eligible YouTube Video." name="description">
+    <meta name="author" content="Anuj Kumar">
+</head>
+<body>
+    <!-- YouTube Logo -->
+    <img src="/static/yt_icon_rgb.svg" height="64" width="64" alt="YouTube Icon">
+
+    <!-- Titles -->
+    <h1 style="font-weight: 300;">YouTube Transcript Summarizer</h1>
+    <h3 style="font-family: 'Open Sans', sans-serif; font-weight: 300;">
+        Get Summarization Done Directly within your browser.
+    </h3>
+
+    <!-- Input Section -->
+    <div id="youtube">
+        <!-- YouTube URL Input -->
+        <input type="text" id="url_input" placeholder="YouTube Video URL">
+        <br>
+        <label for="url_input">Type YouTube Video URL here</label>
+
+        <!-- Summary Choice Dropdown -->
+        <div class="custom-select">
+            <select id="summary-dropdown">
+                <option class="dropdown-text" value="0"></option>
+                <option class="dropdown-text" value="7">Text Rank Algorithm Based (Gemini)</option>
+            </select>
+            <br>
+            <label for="summary-dropdown">
+                Choose Your Summarization Algorithm.<br>
+            </label>
+        </div>
+
+        <!-- Percent Dropdown -->
+        <div class="custom-select" style="margin-top: -5px;">
+            <select id="percent-dropdown">
+                <option class="dropdown-text" value="0">Summary %</option>
+                <option class="dropdown-text" value="1">10%</option>
+                <option class="dropdown-text" value="2">20%</option>
+                <option class="dropdown-text" value="3">30%</option>
+                <option class="dropdown-text" value="4">40%</option>
+                <option class="dropdown-text" value="5">50%</option>
+                <option class="dropdown-text" value="6">60%</option>
+                <option class="dropdown-text" value="7">70%</option>
+            </select>
+            <br>
+            <label for="percent-dropdown">
+                Select a percentage. (Tip: Select 20 or 30)<br>
+                Summary will be presented in approx. X% lines of the available transcript.
+            </label>
+        </div>
+
+        <!-- Summarize Button -->
+        <button class="button" style="margin-top: -5px;" id="my_button" disabled><b>Summarize</b></button>
+    </div>
+
+    <!-- Text Output Section -->
+    <div id="text_out_main" style="display: none;">
+        <h4 id="current_process">Generating Summary</h4>
+        <div id="text-out">Please Wait</div>
+        <button class="button" style="margin:auto; display: none" id="download_button"><b>Download Script</b></button>
+        <h5 id="re_summarize" style="display: none;">
+            Click <a href="javascript:location.reload();">here</a> to summarize another video.
+        </h5>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/static/web.js"></script>
+</body>
+</html>

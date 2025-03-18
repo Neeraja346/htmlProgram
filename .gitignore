@@ -1,0 +1,17 @@
+#/.idea/
+#/__pycache__/
+# Ignore the virtual environment folder
+myenv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment variables
+.env
+
+# Ignore other IDE-specific files
+.vscode/
+.idea/
